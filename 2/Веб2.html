@@ -1,0 +1,119 @@
+<html>
+<head>
+<title></title>
+<script type="text/javascript" >
+window.onload = function() {
+    var button = document.getElementById('input_button_bg_change');
+    var body = document.getElementsByTagName('body')[0];
+    var colors = ['#3d2336', '#1c1019', 'black', 'white', '#1d1018', '#c9a5be', '#5d3954'];
+    button.onclick = function() {
+        body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    };
+};
+</script>
+
+<style>
+h1{
+font-family:serif;
+font-style:oblique;
+font-size: 400% ;
+color: #641349;
+}
+
+#text{
+position: absolute;	
+overflow: auto;
+top: 100px;
+left: 30px;
+right: 500px;
+}
+#task{
+position: absolute; 
+overflow: auto;
+top: 450px;
+left: 30px;
+right: 500px;
+}
+
+
+#floatTip {
+    position: absolute; width: 250px; display: none; 
+    border: 1px solid #000; padding: 4px;
+    font-family: sans-serif; font-size: 9pt;
+    color: #333; background: #ffe5ff;
+   }
+</style>
+<script src="tooltip.js"></script>
+<script src="funktion1.js"></script>
+<script src="funktion2.js"></script>
+<script src="funktion3.js"></script>
+
+<body>
+
+<div id="text">
+<h1 align="left"><font >Шторми</font></h1>
+<h2><font color="#c443be">«Королева Штормов»</font></h2>
+<h3><font color="#614e69">Шторми обладает силой бури. Она знает, как контролировать погоду, умеет управлять циклонами.Она получает свои силы из штормов и ветра, что делает её одной из самых сильных ведьм среди учениц Облачной Башни.</font></h3>
+<h5><font color="#614e69">Имя Stormy происходит о английского "storm" — буря. Слово "stormy" значит "штормовой", а так же "буйный, агрессивный". Как и в случае с Айси, первое значение относится к магии, второе — к характеру.</font></h5>
+</div>
+
+<body>
+    <input type="button" id="input_button_bg_change" value="Смена фона"/>
+</body>
+
+<body>
+  <p><img src="http://www.youloveit.ru/uploads/gallery/main/126/youloveit_ru_fanarty_winx_fantazyme08.png" alt="Фотография" align="right" onmouseover="toolTip('Выполнил студент группы ИДБ 18-03<br>Просвирницна Эвелина<br>')" onmouseout="toolTip()"></p>
+  <div id="floatTip"></div>
+</body>
+
+
+<div id="task">
+
+
+<h2><font color="#7a5259">Задание 1.1</font></h2>
+
+<h3>Ввод</h3>
+
+<input type="text" id="field1">
+
+<button onClick="Function1();">Вывод</button>
+
+<input type="text" id="field2">
+
+
+
+<h2><font color="#7a5259">Задание 1.2</font></h2>
+
+<h3>Введите два однотипных значения </h3>
+
+<input type="text" id="field3">
+<input type="text" id="field4">
+
+<button onClick="Function2();">Вывод суммы</button>
+
+<input type="text" id="sum12">
+
+
+
+<h2><font color="#7a5259">Задание 1.3</font></h2>
+
+<h3>Введите элелементы по одному</h3>
+
+<input type="text" id="field5">
+
+<button onClick="CreateArrN();">Следующий элемент</button>
+<button onClick="Function3();">Вывод обрадтанного массива</button>
+
+<input type="text" id="field6">
+
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
